@@ -19,7 +19,7 @@ def pls(client_socket,address):
     #print (filename)
     filename = os.path.basename(filename)
     filename = os.path.join(SERVER_DATA_PATH, filename)
-
+    #print
     filesize = int(filesize)
     print (filename)
     progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
